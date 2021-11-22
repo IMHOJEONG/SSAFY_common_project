@@ -1,0 +1,232 @@
+ifndef::snippets[]
+:snippets: ../../../build/generated-snippets
+endif::[]
+= API Document
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 3
+:sectlinks:
+:docinfo: shared-head
+
+[[introduction]]
+== 소개
+
+O-GYM API
+
+[[common]]
+== 공통 사항
+
+API에 관계없이 아래 사항을 지켜주셔야 합니다.
+
+=== Domain
+
+|===
+| 환경 | Domain
+
+| 개발서버
+| `https://i5b305.p.ssafy.io:8080`
+
+| 운영서버
+| `https://i5b305.p.ssafy.io`
+|===
+
+=== Common Response
+
+include::{snippets}/common/commonResponse/custom-response-fields.adoc[]
+
+include::{snippets}/common/apiResponseCode/custom-response-fields.adoc[]
+
+&#160;
+
+== 1. 개요
+
+== 2. UserApi
+
+=== 2-1. 회원가입
+
+==== 학생 회원가입
+
+include::{snippets}/userApi/signup/student/successful/request-fields.adoc[]
+
+==== 학생 회원가입 성공
+
+Request Example
+
+include::{snippets}/userApi/signup/student/successful/http-request.adoc[]
+
+Response Example
+
+include::{snippets}/userApi/signup/student/successful/http-response.adoc[]
+
+==== 트레이너 회원가입
+
+include::{snippets}/userApi/signup/teacher/successful/request-fields.adoc[]
+
+==== 트레이너 회원가입
+
+Request Example
+
+include::{snippets}/userApi/signup/teacher/successful/http-request.adoc[]
+
+Response Example
+
+include::{snippets}/userApi/signup/teacher/successful/http-response.adoc[]
+
+=== 2-2. 회원탈퇴
+
+JWT 토큰에서 유저 정보를 추출하여 회원 탈퇴과정을 진행하므로, 별도의 추가 전달 내용 없음.
+
+Request Header
+
+include::{snippets}/userApi/delete/student/successful/request-headers.adoc[]
+
+Request Example
+
+include::{snippets}/userApi/delete/student/successful/http-request.adoc[]
+
+Response Example
+
+include::{snippets}/userApi/delete/student/successful/http-response.adoc[]
+
+=== 2-3. 회원 조회
+
+include::{snippets}/userApi/getUserInfo/successful/path-parameters.adoc[]
+
+Request Header
+
+include::{snippets}/userApi/getUserInfo/successful/request-headers.adoc[]
+
+Request Example
+
+include::{snippets}/userApi/getUserInfo/successful/http-request.adoc[]
+
+Response Example
+
+include::{snippets}/userApi/getUserInfo/successful/http-response.adoc[]
+
+=== 2-4. 유저 프로필 이미지 추가
+
+Request Header
+
+include::{snippets}/userApi/getUserInfo/successful/request-headers.adoc[]
+
+Request Example
+
+include::{snippets}/userApi/putProfile/successful/http-request.adoc[]
+
+Response Example
+
+include::{snippets}/userApi/putProfile/successful/http-response.adoc[]
+
+== 3. PTApi
+
+=== 공통사항
+
+Request Header
+
+IMPORTANT: PT API의 모든 Request는 JWT 인증 토큰을 헤더에 포함해야 합니다.
+
+include::{snippets}/userApi/delete/student/successful/request-headers.adoc[]
+
+=== 3-1. 선생님 리스트 조회하기
+
+모든 파라미터는 전송하지 않을 시, 조건 없이 모든 항목을 검색결과로 돌려주게 됩니다.
+include::{snippets}/PTApi/getTeacherList/successful/request-parameters.adoc[]
+
+==== 선생님 리스트 조회 성공
+
+Request Example
+
+include::{snippets}/PTApi/getTeacherList/successful/http-request.adoc[]
+
+Response Example
+
+include::{snippets}/PTApi/getTeacherList/successful/http-response.adoc[]
+
+=== 3-2. PT 예약하기
+
+include::{snippets}/PTApi/makeReservation/successful/request-fields.adoc[]
+
+Request Example
+
+include::{snippets}/PTApi/makeReservation/successful/http-request.adoc[]
+
+Response Example
+
+include::{snippets}/PTApi/makeReservation/successful/http-response.adoc[]
+
+=== 3-3. PT 예약 취소하기
+
+include::{snippets}/PTApi/cancelReservation/successful/request-fields.adoc[]
+
+Request Example
+
+include::{snippets}/PTApi/cancelReservation/successful/http-request.adoc[]
+
+Response Example
+
+include::{snippets}/PTApi/cancelReservation/successful/http-response.adoc[]
+
+=== 3-4. 선생님 예약 불가 시간 조회
+
+include::{snippets}/PTApi/getTeacherReservationTime/successful/path-parameters.adoc[]
+
+Request Example
+
+include::{snippets}/PTApi/getTeacherReservationTime/successful/http-request.adoc[]
+
+Response Example
+
+include::{snippets}/PTApi/getTeacherReservationTime/successful/http-response.adoc[]
+
+=== 3-5. 유저의 예약된 시간 조회
+
+Request Example
+
+include::{snippets}/PTApi/getReservationTime/successful/http-request.adoc[]
+
+Response Example
+
+include::{snippets}/PTApi/getReservationTime/successful/http-response.adoc[]
+
+=== 3-6. 현재 시간의 예약된 정보를 조회
+
+Request Example
+
+include::{snippets}/PTApi/getNowReservation/successful/http-request.adoc[]
+
+Response Example
+
+include::{snippets}/PTApi/getNowReservation/successful/http-response.adoc[]
+
+== 4. HealthApi
+
+=== 공통사항
+
+Request Header
+
+IMPORTANT: Health API의 모든 Request는 JWT 인증 토큰을 헤더에 포함해야 합니다.
+
+include::{snippets}/userApi/delete/student/successful/request-headers.adoc[]
+
+=== 4-1 내 학생들의 건강정보 조회
+
+Request Example
+
+include::{snippets}/healthApi/getMyStudentsHealth/success/http-request.adoc[]
+
+Response Example
+
+include::{snippets}/healthApi/getMyStudentsHealth/success/http-response.adoc[]
+
+=== 4-2 내 건강정보 조회
+
+Request Example
+
+include::{snippets}/healthApi/getMyHealth/success/http-request.adoc[]
+
+Response Example
+
+include::{snippets}/healthApi/getMyHealth/success/http-response.adoc[]

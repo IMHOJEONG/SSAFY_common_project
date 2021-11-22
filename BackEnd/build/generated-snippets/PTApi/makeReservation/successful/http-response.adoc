@@ -1,0 +1,12 @@
+[source,http,options="nowrap"]
+----
+HTTP/1.1 201 Created
+Content-Type: application/json;charset=UTF-8
+Content-Length: 96
+
+{
+  "statusCode" : 201,
+  "message" : "PT예약에 성공하였습니다.",
+  "data" : { }
+}
+----

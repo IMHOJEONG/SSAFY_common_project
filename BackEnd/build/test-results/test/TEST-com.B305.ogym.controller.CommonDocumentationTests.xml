@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.B305.ogym.controller.CommonDocumentationTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-08-19T14:18:53" hostname="DESKTOP-H7093P3" time="0.299">
+  <properties/>
+  <testcase name="commonResponse()" classname="com.B305.ogym.controller.CommonDocumentationTests" time="0.252"/>
+  <testcase name="apiResponseCode()" classname="com.B305.ogym.controller.CommonDocumentationTests" time="0.045"/>
+  <system-out><![CDATA[23:18:49.259 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+23:18:49.276 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+23:18:49.322 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.B305.ogym.controller.CommonDocumentationTests] from class [org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper]
+23:18:49.332 [Test worker] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.B305.ogym.controller.CommonDocumentationTests], using SpringBootContextLoader
+23:18:49.337 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.B305.ogym.controller.CommonDocumentationTests]: class path resource [com/B305/ogym/controller/CommonDocumentationTests-context.xml] does not exist
+23:18:49.337 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.B305.ogym.controller.CommonDocumentationTests]: class path resource [com/B305/ogym/controller/CommonDocumentationTestsContext.groovy] does not exist
+23:18:49.338 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.B305.ogym.controller.CommonDocumentationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+23:18:49.339 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.B305.ogym.controller.CommonDocumentationTests]: CommonDocumentationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:18:49.414 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.B305.ogym.controller.CommonDocumentationTests]
+23:18:49.501 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\ssafy-common-sub3\BackEnd\build\classes\java\main\com\B305\ogym\OgymApplication.class]
+23:18:49.502 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.B305.ogym.OgymApplication for test class com.B305.ogym.controller.CommonDocumentationTests
+23:18:49.505 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - @TestExecutionListeners is not present for class [com.B305.ogym.controller.CommonDocumentationTests]: using defaults.
+23:18:49.506 [Test worker] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+23:18:49.528 [Test worker] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@61fed422, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3a06f29, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@c4fc92f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6ea530cf, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@79edb6fd, org.springframework.test.context.support.DirtiesContextTestExecutionListener@793457ce, org.springframework.test.context.transaction.TransactionalTestExecutionListener@bc0ff76, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4c249589, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@58ea88ae, org.springframework.test.context.event.EventPublishingTestExecutionListener@33b2e5a, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@f0c5a04, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@676c0eb1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6bcf450a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@315cefd7, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5ced4f82, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5b73db28, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4a053259]
+23:18:49.533 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@1bcdcef4 testClass = CommonDocumentationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1394addf testClass = CommonDocumentationTests, locations = '{}', classes = '{class com.B305.ogym.OgymApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@74fd8d43, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@40c2ec56, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@b8c39e99, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@34793362, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4321fee8, [ImportsContextCustomizer@6af02320 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration, org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration, org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration, org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration, org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration, org.springframework.boot.autoconfigure.hateoas.HypermediaAutoConfiguration, org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration, org.springframework.boot.autoconfigure.jsonb.JsonbAutoConfiguration, org.springframework.boot.autoconfigure.mustache.MustacheAutoConfiguration, org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration, org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration, org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@8aa0881, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@729a3b17, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@b41da29e, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+23:18:49.582 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.5.2)
+
+2021-08-19 23:18:50.083  INFO 25316 --- [    Test worker] c.B.o.c.CommonDocumentationTests         : Starting CommonDocumentationTests using Java 11.0.1 on DESKTOP-H7093P3 with PID 25316 (started by juhyu in C:\ssafy-common-sub3\BackEnd)
+2021-08-19 23:18:50.086  INFO 25316 --- [    Test worker] c.B.o.c.CommonDocumentationTests         : No active profile set, falling back to default profiles: default
+2021-08-19 23:18:52.827  INFO 25316 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 487f7447-8c39-429d-854d-dd270a43b5ac
+
+2021-08-19 23:18:53.136  INFO 25316 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@108a3aa1, org.springframework.security.web.context.SecurityContextPersistenceFilter@eebbfe8, org.springframework.security.web.header.HeaderWriterFilter@79b2b346, org.springframework.security.web.csrf.CsrfFilter@8340070, org.springframework.security.web.authentication.logout.LogoutFilter@528c0884, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@53a03e98, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5c49ecb, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@69e3eecc, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@119c5f36, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7d1ecfc0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4fc2b9b5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1a756929, org.springframework.security.web.session.SessionManagementFilter@6ec5ff6, org.springframework.security.web.access.ExceptionTranslationFilter@7b6d9b55, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3c769063]
+2021-08-19 23:18:53.300  INFO 25316 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-08-19 23:18:53.301  INFO 25316 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-08-19 23:18:53.303  INFO 25316 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2021-08-19 23:18:53.337  INFO 25316 --- [    Test worker] c.B.o.c.CommonDocumentationTests         : Started CommonDocumentationTests in 3.742 seconds (JVM running for 5.2)
+2021-08-19 23:18:53.408  INFO 25316 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-08-19 23:18:53.409  INFO 25316 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-08-19 23:18:53.410  INFO 25316 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /docs/commonResponse
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.B305.ogym.api.controller.EnumViewController
+           Method = com.B305.ogym.api.controller.EnumViewController#commonResponse()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+     Content type = application/json;charset=UTF-8
+             Body = {"data":"데이터","message":"메시지","statusCode":"HTTP STATUS"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2021-08-19 23:18:53.606  INFO 25316 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-08-19 23:18:53.606  INFO 25316 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-08-19 23:18:53.606  INFO 25316 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /docs/apiResponseCode
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.B305.ogym.api.controller.EnumViewController
+           Method = com.B305.ogym.api.controller.EnumViewController#apiResponseCode()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+     Content type = application/json;charset=UTF-8
+             Body = {"UNAUTHORIZED_USER":"인증되지 않는 유저에게 발생하는 에러입니다.","TEACHER_NOT_FOUND":"대상 트레이너를 찾을 수 없을 때 발생하는 에러입니다.","USER_NOT_FOUND":"유저를 찾을 수 없을 때 발생하는 에러입니다.","DUPLICATION_EMAIL":"이메일 중복 시 발생하는 에러입니다.","VALIDATION_FAILED":"유효성 조건을 만족하지 못한 경우 발생하는 에러입니다.","DUPLICATION_RESERVATION":"예약 중복 시 발생하는 에러입니다.","DUPLICATION_NICKNAME":"닉네임 중복 시 발생하는 에러입니다.","RESERVATION_NOT_FOUND":"예약을 찾을 수 없을 때 발생하는 에러입니다.","OK":"요청이 성공하였습니다.","DUPLICATION_MONTH":"월별 데이터 중복 시 발생하는 에러입니다.","NOT_VALID_PARAM":"파라미터가 유효하지 않을 때 발생하는 에러입니다."}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

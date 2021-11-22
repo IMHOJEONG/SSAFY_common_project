@@ -1,0 +1,26 @@
+[source,bash]
+----
+$ curl 'https://i5b305.ssafy.io/api/user' -i -X POST \
+    -H 'Content-Type: application/json;charset=UTF-8' \
+    -d '{
+  "email" : "hello@naver.com",
+  "password" : "asdasd",
+  "username" : "juhu",
+  "age" : 20,
+  "nickname" : "juhu",
+  "gender" : 0,
+  "tel" : "010-0000-0000",
+  "zipCode" : "12345",
+  "street" : "road 17",
+  "detailedAddress" : "juhu",
+  "role" : "ROLE_PTTEACHER",
+  "monthlyHeights" : null,
+  "monthlyWeights" : null,
+  "major" : "재활",
+  "certificates" : [ ],
+  "careers" : [ ],
+  "price" : 1000,
+  "description" : "트레이너",
+  "snsAddrs" : [ ]
+}'
+----

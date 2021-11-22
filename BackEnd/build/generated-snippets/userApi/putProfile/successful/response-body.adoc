@@ -1,0 +1,8 @@
+[source,options="nowrap"]
+----
+{
+  "statusCode" : 200,
+  "message" : "프로필 저장에 성공했습니다.",
+  "data" : { }
+}
+----

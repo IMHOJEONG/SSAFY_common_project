@@ -1,0 +1,10 @@
+[source,bash]
+----
+$ echo '{
+  "ptTeacherEmail" : "student@naver.com",
+  "reservationTime" : "2021-08-28T13:00:00",
+  "description" : "상체"
+}' | http DELETE 'https://i5b305.ssafy.io/api/pt/reservation' \
+    'Content-Type:application/json;charset=UTF-8' \
+    'Authorization:JWT ACCESS TOKEN'
+----

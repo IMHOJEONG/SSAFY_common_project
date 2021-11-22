@@ -1,0 +1,8 @@
+[source,options="nowrap"]
+----
+{
+  "ptTeacherEmail" : "teacher@naver.com",
+  "reservationTime" : "2021-08-28T13:00:00",
+  "description" : "상체"
+}
+----

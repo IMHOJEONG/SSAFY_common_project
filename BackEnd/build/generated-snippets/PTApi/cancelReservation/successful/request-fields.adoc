@@ -1,0 +1,23 @@
+=== Request Fields
+|===
+|필드|타입|필수값|설명|제한
+
+|ptTeacherEmail
+|String
+|true
+|예약된 PT 트레이너의 이메일
+|
+
+|reservationTime
+|String
+|true
+|PT 취소 예약 시간
+|yyyy-MM-dd'T'HH:mm:ss
+
+|description
+|String
+|true
+|PT 예약 취소 사유
+|
+
+|===

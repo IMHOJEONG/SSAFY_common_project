@@ -1,0 +1,21 @@
+[cols="5,3,5,5"]
+===== Response Data Fields
+|===
+|필드명|타입|양식|설명
+
+|`+statusCode+`
+|`+Number+`
+|
+|HTTP 상태 코드
+
+|`+message+`
+|`+String+`
+|
+|메시지
+
+|`+data+`
+|`+Object+`
+|
+|반환 데이터
+
+|===

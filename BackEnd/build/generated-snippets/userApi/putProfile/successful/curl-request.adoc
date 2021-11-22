@@ -1,0 +1,8 @@
+[source,bash]
+----
+$ curl 'https://i5b305.ssafy.io/api/user' -i -X PATCH \
+    -H 'Content-Type: application/json;charset=UTF-8' \
+    -d '{
+  "url" : "fileDIR/fileURL"
+}'
+----

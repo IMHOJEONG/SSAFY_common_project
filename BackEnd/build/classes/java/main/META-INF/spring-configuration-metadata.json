@@ -1,0 +1,37 @@
+{
+  "groups": [
+    {
+      "name": "cache.redis",
+      "type": "com.B305.ogym.common.properties.CacheProperties",
+      "sourceType": "com.B305.ogym.common.properties.CacheProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "cache.redis.ttl",
+      "type": "java.util.Map<java.lang.String,java.lang.Long>",
+      "sourceType": "com.B305.ogym.common.properties.CacheProperties"
+    },
+    {
+      "name": "spring.redis.cache.host",
+      "type": "java.lang.String",
+      "description": "Description for spring.redis.cache.host."
+    },
+    {
+      "name": "spring.redis.cache.port",
+      "type": "java.lang.String",
+      "description": "Description for spring.redis.cache.port."
+    },
+    {
+      "name": "spring.redis.token.host",
+      "type": "java.lang.String",
+      "description": "Description for spring.redis.token.host."
+    },
+    {
+      "name": "spring.redis.token.port",
+      "type": "java.lang.String",
+      "description": "Description for spring.redis.token.port."
+    }
+  ],
+  "hints": []
+}

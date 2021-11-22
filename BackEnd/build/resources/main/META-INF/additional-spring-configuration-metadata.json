@@ -1,0 +1,24 @@
+{
+  "properties": [
+    {
+      "name": "spring.redis.cache.host",
+      "type": "java.lang.String",
+      "description": "Description for spring.redis.cache.host."
+    },
+    {
+      "name": "spring.redis.cache.port",
+      "type": "java.lang.String",
+      "description": "Description for spring.redis.cache.port."
+    },
+    {
+      "name": "spring.redis.token.host",
+      "type": "java.lang.String",
+      "description": "Description for spring.redis.token.host."
+    },
+    {
+      "name": "spring.redis.token.port",
+      "type": "java.lang.String",
+      "description": "Description for spring.redis.token.port."
+    }
+  ]
+}

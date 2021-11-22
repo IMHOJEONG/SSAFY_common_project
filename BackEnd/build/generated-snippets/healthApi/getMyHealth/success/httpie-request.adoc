@@ -1,0 +1,5 @@
+[source,bash]
+----
+$ http GET 'https://i5b305.ssafy.io/api/health/myhealth' \
+    'Authorization:JWT ACCESS TOKEN'
+----

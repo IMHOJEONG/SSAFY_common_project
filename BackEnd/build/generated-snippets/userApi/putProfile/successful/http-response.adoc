@@ -1,0 +1,12 @@
+[source,http,options="nowrap"]
+----
+HTTP/1.1 200 OK
+Content-Type: application/json;charset=UTF-8
+Content-Length: 101
+
+{
+  "statusCode" : 200,
+  "message" : "프로필 저장에 성공했습니다.",
+  "data" : { }
+}
+----

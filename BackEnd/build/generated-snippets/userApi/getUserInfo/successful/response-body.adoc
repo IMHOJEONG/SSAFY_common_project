@@ -1,0 +1,11 @@
+[source,options="nowrap"]
+----
+{
+  "statusCode" : 200,
+  "message" : "회원 정보를 불러오는데 성공했습니다",
+  "data" : {
+    "id" : 1,
+    "email" : "teacher@naver.com"
+  }
+}
+----

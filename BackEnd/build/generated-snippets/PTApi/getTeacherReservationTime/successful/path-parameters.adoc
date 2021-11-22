@@ -1,0 +1,13 @@
+===== End Point
+/api/pt/reservation/{teacherEmail}
+
+[cols="3,2,5,5"]
+===== Path Parameters
+|===
+|파라미터|양식|설명
+
+|`+teacherEmail+`
+|
+|예약이 불가능한 시간을 조회할 트레이너 이메일
+
+|===

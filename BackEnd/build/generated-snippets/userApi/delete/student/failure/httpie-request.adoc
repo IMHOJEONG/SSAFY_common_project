@@ -1,0 +1,5 @@
+[source,bash]
+----
+$ http DELETE 'https://i5b305.ssafy.io/api/user' \
+    'Authorization:JWT ACCESS TOKEN'
+----

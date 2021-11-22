@@ -1,0 +1,13 @@
+[source,http,options="nowrap"]
+----
+HTTP/1.1 200 OK
+Content-Disposition: inline;filename=f.txt
+Content-Type: application/json;charset=UTF-8
+Content-Length: 150
+
+{
+  "statusCode" : 200,
+  "message" : "해당 선생님의 예약된 시간 조회에 성공했습니다.",
+  "data" : [ "2021-08-28T13:00:00" ]
+}
+----

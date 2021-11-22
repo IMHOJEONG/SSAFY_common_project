@@ -1,0 +1,8 @@
+[source,options="nowrap"]
+----
+{
+  "statusCode" : 200,
+  "message" : "PT 삭제에 성공했습니다.",
+  "data" : { }
+}
+----

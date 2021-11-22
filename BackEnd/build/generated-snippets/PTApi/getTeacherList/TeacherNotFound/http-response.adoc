@@ -1,0 +1,8 @@
+[source,http,options="nowrap"]
+----
+HTTP/1.1 404 Not Found
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 72
+
+가입하지 않은 아이디이거나, 잘못된 비밀번호입니다.
+----

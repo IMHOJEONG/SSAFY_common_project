@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.B305.ogym.service.HealthServiceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-08-19T14:18:58" hostname="DESKTOP-H7093P3" time="0.126">
+  <properties/>
+  <testcase name="내 건강정보 확인 - 성공" classname="com.B305.ogym.service.HealthServiceTest" time="0.117"/>
+  <testcase name="내 학생들의 건강정보 리스트 확인 - 이미 탈퇴한 회원 정보로 인한 실패" classname="com.B305.ogym.service.HealthServiceTest" time="0.004"/>
+  <testcase name="내 건강정보 확인 - 이미 탈퇴한 회원 정보로 인한 실패" classname="com.B305.ogym.service.HealthServiceTest" time="0.003"/>
+  <testcase name="내 학생들의 건강정보 리스트 확인 - 성공" classname="com.B305.ogym.service.HealthServiceTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

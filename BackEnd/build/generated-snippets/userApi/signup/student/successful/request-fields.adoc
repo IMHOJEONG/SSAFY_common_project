@@ -1,0 +1,119 @@
+=== Request Fields
+|===
+|필드|타입|필수값|설명|제한
+
+|email
+|String
+|true
+|학생의 이메일 주소
+|최소 3글자, 최대 50글자 이내로 입력해주세요. @*.com의 양식을 갖추어야 합니다.
+
+|password
+|String
+|true
+|학생의 비밀번호
+|최소 3글자, 최대 20글자 이내로 입력해주세요.
+
+|username
+|String
+|true
+|학생의 이름
+|최소 2글자, 최대 10글자 이내로 입력해주세요.
+
+|nickname
+|String
+|true
+|학생의 별명
+|최소 2글자, 최대 10글자 이내로 입력해주세요.
+
+|age
+|Number
+|true
+|학생의 나이
+|150세 이하로 입력해주세요.
+
+|gender
+|Number
+|true
+|학생의 성별
+|0 (MAN), 1 (WOMAN) 중 하나로 입력해주세요.
+
+|tel
+|String
+|true
+|학생의 전화번호
+|000-000(3글자 혹은 4글자)-000의 형식으로 입력해주세요.
+
+|zipCode
+|String
+|true
+|학생의 우편번호
+|5글자로 입력해주세요.
+
+|street
+|String
+|true
+|학생의 도로명 주소
+|
+
+|detailedAddress
+|String
+|true
+|학생의 상세 주소
+|
+
+|role
+|String
+|true
+|학생의 권한
+|
+
+|monthlyHeights
+|Array
+|true
+|학생의 월별 신장 목록
+|
+
+|monthlyWeights
+|Array
+|true
+|학생의 월별 체중 목록
+|
+
+|major
+|String
+|
+|학생의 경우 입력받지 않습니다
+|
+
+|certificates
+|Array
+|
+|학생의 경우 입력받지 않습니다
+|
+
+|careers
+|Array
+|
+|학생의 경우 입력받지 않습니다
+|
+
+|price
+|Number
+|
+|학생의 경우 입력받지 않습니다
+|
+
+|description
+|String
+|
+|학생의 경우 입력받지 않습니다
+|
+
+|snsAddrs
+|Null
+|
+|학생의 경우 입력받지 않습니다
+|
+
+|===

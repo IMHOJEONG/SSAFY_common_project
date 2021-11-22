@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.B305.ogym.controller.PTApiControllerTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2021-08-19T14:18:56" hostname="DESKTOP-H7093P3" time="0.752">
+  <properties/>
+  <testcase name="PT 예약하기 - 해당하는 선생님 이메일이 존재하지 않아 실패" classname="com.B305.ogym.controller.PTApiControllerTest" time="0.311"/>
+  <testcase name="유저의 예약된 시간 조회 - 실패" classname="com.B305.ogym.controller.PTApiControllerTest" time="0.011"/>
+  <testcase name="요청한 시간을 기준으로 10분 이전/이후의 예약을 조회 - 성공" classname="com.B305.ogym.controller.PTApiControllerTest" time="0.039"/>
+  <testcase name="PT 예약 취소하기 - 요청한 학생이 존재하지 않아 실패" classname="com.B305.ogym.controller.PTApiControllerTest" time="0.019"/>
+  <testcase name="PT 예약 취소하기 - 성공" classname="com.B305.ogym.controller.PTApiControllerTest" time="0.044"/>
+  <testcase name="PT 예약하기 - 해당하는 학생 이메일이 존재하지 않아 실패" classname="com.B305.ogym.controller.PTApiControllerTest" time="0.041"/>
+  <testcase name="PT 예약하기 - 성공" classname="com.B305.ogym.controller.PTApiControllerTest" time="0.041"/>
+  <testcase name="선생님 예약 불가 시간 조회 - 성공" classname="com.B305.ogym.controller.PTApiControllerTest" time="0.075"/>
+  <testcase name="PT 예약 취소하기 - 제거 요청한 예약이 존재하지 않아 실패" classname="com.B305.ogym.controller.PTApiControllerTest" time="0.016"/>
+  <testcase name="선생님 예약 불가 시간 조회 - 실패" classname="com.B305.ogym.controller.PTApiControllerTest" time="0.014"/>
+  <testcase name="유저의 예약된 시간 조회 - 성공" classname="com.B305.ogym.controller.PTApiControllerTest" time="0.037"/>
+  <testcase name="PT 예약 취소하기 - 요청한 트레이너가 존재하지 않아 실패" classname="com.B305.ogym.controller.PTApiControllerTest" time="0.016"/>
+  <testcase name="선생님 리스트 불러오기 - 성공" classname="com.B305.ogym.controller.PTApiControllerTest" time="0.07"/>
+  <system-out><![CDATA[2021-08-19 23:18:54.995  INFO 25316 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.B305.ogym.controller.PTApiControllerTest], using SpringBootContextLoader
+2021-08-19 23:18:54.997  INFO 25316 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.B305.ogym.controller.PTApiControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-08-19 23:18:54.997  INFO 25316 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.B305.ogym.controller.PTApiControllerTest]: PTApiControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-08-19 23:18:55.001  INFO 25316 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.B305.ogym.OgymApplication for test class com.B305.ogym.controller.PTApiControllerTest
+2021-08-19 23:18:55.002  INFO 25316 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-08-19 23:18:55.003  INFO 25316 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@25270bc7, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@518cd56f, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@2c61e8fb, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@392a82f9, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@24cecf28, org.springframework.test.context.support.DirtiesContextTestExecutionListener@13de5173, org.springframework.test.context.transaction.TransactionalTestExecutionListener@30db55c3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5d8b346b, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@fee177d, org.springframework.test.context.event.EventPublishingTestExecutionListener@6eda8a3a, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@4c5bf6f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@69fbf0, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7f43417f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@45728ff7, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6c657ef1, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@231cbef6, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@46b15b53]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.5.2)
+
+2021-08-19 23:18:55.063  INFO 25316 --- [    Test worker] c.B.ogym.controller.PTApiControllerTest  : Starting PTApiControllerTest using Java 11.0.1 on DESKTOP-H7093P3 with PID 25316 (started by juhyu in C:\ssafy-common-sub3\BackEnd)
+2021-08-19 23:18:55.064  INFO 25316 --- [    Test worker] c.B.ogym.controller.PTApiControllerTest  : No active profile set, falling back to default profiles: default
+2021-08-19 23:18:55.817  INFO 25316 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: e39b614f-1be3-498a-a844-db9a9e6db1ec
+
+2021-08-19 23:18:55.949  INFO 25316 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4fdb4282, org.springframework.security.web.context.SecurityContextPersistenceFilter@37bfb30e, org.springframework.security.web.header.HeaderWriterFilter@1579603c, org.springframework.security.web.csrf.CsrfFilter@44d6608c, org.springframework.security.web.authentication.logout.LogoutFilter@5679e687, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@722bd0f3, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3dcf644d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4f967041, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@56b4e25d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@51f74540, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@fd1a7c2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@63968d08, org.springframework.security.web.session.SessionManagementFilter@401a7981, org.springframework.security.web.access.ExceptionTranslationFilter@d9d7677, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5cfb86ce]
+2021-08-19 23:18:56.002  INFO 25316 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-08-19 23:18:56.002  INFO 25316 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-08-19 23:18:56.002  INFO 25316 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2021-08-19 23:18:56.018  INFO 25316 --- [    Test worker] c.B.ogym.controller.PTApiControllerTest  : Started PTApiControllerTest in 1.011 seconds (JVM running for 7.881)
+2021-08-19 23:18:56.028  INFO 25316 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-08-19 23:18:56.028  INFO 25316 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-08-19 23:18:56.029  INFO 25316 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/pt/reservation
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Authorization:"JWT ACCESS TOKEN", Content-Length:"101"]
+             Body = {"ptTeacherEmail":"student@naver.com","reservationTime":"2021-08-28T13:00:00","description":"상체"}
+    Session Attrs = {}
+
+Handler:
+             Type = com.B305.ogym.controller.PTApiController
+           Method = com.B305.ogym.controller.PTApiController#makeReservation(String, reservationRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = com.B305.ogym.exception.user.UserNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = [Content-Type:"text/plain;charset=UTF-8", Content-Length:"72"]
+     Content type = text/plain;charset=UTF-8
+             Body = 가입하지 않은 아이디이거나, 잘못된 비밀번호입니다.
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2021-08-19 23:18:56.337  INFO 25316 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-08-19 23:18:56.337  INFO 25316 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-08-19 23:18:56.338  INFO 25316 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/pt/reservation
+       Parameters = {}
+          Headers = [Authorization:"JWT ACCESS TOKEN"]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.B305.ogym.controller.PTApiController
+           Method = com.B305.ogym.controller.PTApiController#getReservationTime(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = com.B305.ogym.exception.user.UserNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = [Content-Type:"text/plain;charset=UTF-8", Content-Length:"72"]
+     Content type = text/plain;charset=UTF-8
+             Body = 가입하지 않은 아이디이거나, 잘못된 비밀번호입니다.
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2021-08-19 23:18:56.352  INFO 25316 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-08-19 23:18:56.352  INFO 25316 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-08-19 23:18:56.353  INFO 25316 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/pt/nowreservation
+       Parameters = {}
+          Headers = [Authorization:"JWT ACCESS TOKEN"]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.B305.ogym.controller.PTApiController
+           Method = com.B305.ogym.controller.PTApiController#getNowReservation(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+     Content type = application/json;charset=UTF-8
+             Body = {"statusCode":200,"message":"현재 예약 정보 조회에 성공했습니다.","data":{"teacherNickname":"트레이너","studentNickname":"학생"}}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2021-08-19 23:18:56.392  INFO 25316 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-08-19 23:18:56.392  INFO 25316 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-08-19 23:18:56.393  INFO 25316 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /api/pt/reservation
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Authorization:"JWT ACCESS TOKEN", Content-Length:"101"]
+             Body = {"ptTeacherEmail":"student@naver.com","reservationTime":"2021-08-28T13:00:00","description":"상체"}
+    Session Attrs = {}
+
+Handler:
+             Type = com.B305.ogym.controller.PTApiController
+           Method = com.B305.ogym.controller.PTApiController#cancelReservation(String, reservationRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = com.B305.ogym.exception.user.UserNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = [Content-Type:"text/plain;charset=UTF-8", Content-Length:"72"]
+     Content type = text/plain;charset=UTF-8
+             Body = 가입하지 않은 아이디이거나, 잘못된 비밀번호입니다.
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2021-08-19 23:18:56.412  INFO 25316 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-08-19 23:18:56.412  INFO 25316 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-08-19 23:18:56.413  INFO 25316 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /api/pt/reservation
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Authorization:"JWT ACCESS TOKEN", Content-Length:"101"]
+             Body = {"ptTeacherEmail":"student@naver.com","reservationTime":"2021-08-28T13:00:00","description":"상체"}
+    Session Attrs = {}
+
+Handler:
+             Type = com.B305.ogym.controller.PTApiController
+           Method = com.B305.ogym.controller.PTApiController#cancelReservation(String, reservationRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+     Content type = application/json;charset=UTF-8
+             Body = {"statusCode":200,"message":"PT 삭제에 성공했습니다.","data":{}}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2021-08-19 23:18:56.456  INFO 25316 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-08-19 23:18:56.456  INFO 25316 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-08-19 23:18:56.457  INFO 25316 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/pt/reservation
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Authorization:"JWT ACCESS TOKEN", Content-Length:"101"]
+             Body = {"ptTeacherEmail":"teacher@naver.com","reservationTime":"2021-08-28T13:00:00","description":"상체"}
+    Session Attrs = {}
+
+Handler:
+             Type = com.B305.ogym.controller.PTApiController
+           Method = com.B305.ogym.controller.PTApiController#makeReservation(String, reservationRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = com.B305.ogym.exception.user.UserNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = [Content-Type:"text/plain;charset=UTF-8", Content-Length:"72"]
+     Content type = text/plain;charset=UTF-8
+             Body = 가입하지 않은 아이디이거나, 잘못된 비밀번호입니다.
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2021-08-19 23:18:56.499  INFO 25316 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-08-19 23:18:56.499  INFO 25316 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-08-19 23:18:56.500  INFO 25316 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/pt/reservation
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Authorization:"JWT ACCESS TOKEN", Content-Length:"101"]
+             Body = {"ptTeacherEmail":"teacher@naver.com","reservationTime":"2021-08-28T13:00:00","description":"상체"}
+    Session Attrs = {}
+
+Handler:
+             Type = com.B305.ogym.controller.PTApiController
+           Method = com.B305.ogym.controller.PTApiController#makeReservation(String, reservationRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 201
+    Error message = null
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+     Content type = application/json;charset=UTF-8
+             Body = {"statusCode":201,"message":"PT예약에 성공하였습니다.","data":{}}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2021-08-19 23:18:56.542  INFO 25316 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-08-19 23:18:56.542  INFO 25316 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-08-19 23:18:56.543  INFO 25316 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/pt/reservation/teacher@naver.com
+       Parameters = {}
+          Headers = [Authorization:"JWT ACCESS TOKEN"]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.B305.ogym.controller.PTApiController
+           Method = com.B305.ogym.controller.PTApiController#getTeacherReservationTime(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Disposition:"inline;filename=f.txt", Content-Type:"application/json;charset=UTF-8"]
+     Content type = application/json;charset=UTF-8
+             Body = {"statusCode":200,"message":"해당 선생님의 예약된 시간 조회에 성공했습니다.","data":["2021-08-28T13:00:00"]}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2021-08-19 23:18:56.619  INFO 25316 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-08-19 23:18:56.619  INFO 25316 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-08-19 23:18:56.620  INFO 25316 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /api/pt/reservation
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Authorization:"JWT ACCESS TOKEN", Content-Length:"101"]
+             Body = {"ptTeacherEmail":"student@naver.com","reservationTime":"2021-08-28T13:00:00","description":"상체"}
+    Session Attrs = {}
+
+Handler:
+             Type = com.B305.ogym.controller.PTApiController
+           Method = com.B305.ogym.controller.PTApiController#cancelReservation(String, reservationRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = com.B305.ogym.exception.user.UserNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = [Content-Type:"text/plain;charset=UTF-8", Content-Length:"72"]
+     Content type = text/plain;charset=UTF-8
+             Body = 가입하지 않은 아이디이거나, 잘못된 비밀번호입니다.
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2021-08-19 23:18:56.637  INFO 25316 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-08-19 23:18:56.637  INFO 25316 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-08-19 23:18:56.638  INFO 25316 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/pt/reservation/teacher@naver.com
+       Parameters = {}
+          Headers = [Authorization:"JWT ACCESS TOKEN"]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.B305.ogym.controller.PTApiController
+           Method = com.B305.ogym.controller.PTApiController#getTeacherReservationTime(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = com.B305.ogym.exception.user.UserNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = [Content-Disposition:"inline;filename=f.txt", Content-Type:"text/plain;charset=UTF-8", Content-Length:"72"]
+     Content type = text/plain;charset=UTF-8
+             Body = 가입하지 않은 아이디이거나, 잘못된 비밀번호입니다.
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2021-08-19 23:18:56.652  INFO 25316 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-08-19 23:18:56.652  INFO 25316 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-08-19 23:18:56.653  INFO 25316 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/pt/reservation
+       Parameters = {}
+          Headers = [Authorization:"JWT ACCESS TOKEN"]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.B305.ogym.controller.PTApiController
+           Method = com.B305.ogym.controller.PTApiController#getReservationTime(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+     Content type = application/json;charset=UTF-8
+             Body = {"statusCode":200,"message":"예약 시간 조회에 성공했습니다.","data":[{"description":"이두 운동","nickname":"김계란","username":"김성식","profileUrl":"profileURL/profileIMG.jpg","email":"eggkim@ssafy.com","reservationTime":"2021-07-28T04:00:00"}]}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2021-08-19 23:18:56.690  INFO 25316 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-08-19 23:18:56.690  INFO 25316 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-08-19 23:18:56.691  INFO 25316 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /api/pt/reservation
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Authorization:"JWT ACCESS TOKEN", Content-Length:"101"]
+             Body = {"ptTeacherEmail":"student@naver.com","reservationTime":"2021-08-28T13:00:00","description":"상체"}
+    Session Attrs = {}
+
+Handler:
+             Type = com.B305.ogym.controller.PTApiController
+           Method = com.B305.ogym.controller.PTApiController#cancelReservation(String, reservationRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = com.B305.ogym.exception.user.UserNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = [Content-Type:"text/plain;charset=UTF-8", Content-Length:"72"]
+     Content type = text/plain;charset=UTF-8
+             Body = 가입하지 않은 아이디이거나, 잘못된 비밀번호입니다.
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2021-08-19 23:18:56.708  INFO 25316 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-08-19 23:18:56.708  INFO 25316 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-08-19 23:18:56.709  INFO 25316 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/pt/teacherlist
+       Parameters = {page=[0], size=[10], name=[서현진], gender=[WOMAN], minPrice=[100], maxPrice=[200000], minAge=[1], maxAge=[100]}
+          Headers = [Authorization:"JWT ACCESS TOKEN"]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.B305.ogym.controller.PTApiController
+           Method = com.B305.ogym.controller.PTApiController#teacherList(SearchDto, Pageable)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+     Content type = application/json;charset=UTF-8
+             Body = {"statusCode":200,"message":"PT 선생님 리스트 불러오기에 성공하였습니다.","data":{"teacherList":[{"username":"서현진","gender":"WOMAN","age":21,"nickname":"오해영","tel":"010-2021-0105","email":"eggkim5@ssafy.com","profilePicture":null,"starRating":4.8,"major":"특공무술","price":200000,"description":"좋았어. 거짓은 머리털만큼도 없다! 신뢰와 정직으로 모시겠습니다","snsList":[],"careers":[],"reservations":[],"certificates":[]}],"totalPages":0,"totalElements":0,"numberOfElements":0}}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,5 @@
+[source,bash]
+----
+$ http GET 'https://i5b305.ssafy.io/api/user/%5Bid,%20email%5D' \
+    'Authorization:JWT ACCESS TOKEN'
+----

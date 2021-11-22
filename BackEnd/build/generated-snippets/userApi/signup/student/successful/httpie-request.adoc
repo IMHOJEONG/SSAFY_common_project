@@ -1,0 +1,25 @@
+[source,bash]
+----
+$ echo '{
+  "email" : "hello@naver.com",
+  "password" : "asdasd",
+  "username" : "한솥",
+  "age" : 16,
+  "nickname" : "nononoo1",
+  "gender" : 0,
+  "tel" : "010-0000-0000",
+  "zipCode" : "12345",
+  "street" : "도로명",
+  "detailedAddress" : "상세주소",
+  "role" : "ROLE_PTSTUDENT",
+  "monthlyHeights" : [ 180, 200, 210, 180, 200, 210, 180, 200, 210, 180, 200, 210 ],
+  "monthlyWeights" : [ 180, 200, 210, 180, 200, 210, 180, 200, 210, 180, 200, 210 ],
+  "major" : null,
+  "certificates" : null,
+  "careers" : null,
+  "price" : 0,
+  "description" : null,
+  "snsAddrs" : null
+}' | http POST 'https://i5b305.ssafy.io/api/user' \
+    'Content-Type:application/json;charset=UTF-8'
+----

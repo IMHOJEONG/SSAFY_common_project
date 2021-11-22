@@ -1,0 +1,18 @@
+#header_img {
+    display: none;
+}
+
+#titleContent {
+    margin: 0 10px;
+    background: red;
+    border-radius: 5px;
+}
+
+#titleContent > #session-title{
+    font-weight:bold;
+}
+
+
+#session .MuiToolbar-root{
+    background: linear-gradient(45deg, #3f87a6, #ebf8e1, #f69d3c);
+}

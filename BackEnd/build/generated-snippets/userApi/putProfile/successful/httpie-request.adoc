@@ -1,0 +1,7 @@
+[source,bash]
+----
+$ echo '{
+  "url" : "fileDIR/fileURL"
+}' | http PATCH 'https://i5b305.ssafy.io/api/user' \
+    'Content-Type:application/json;charset=UTF-8'
+----

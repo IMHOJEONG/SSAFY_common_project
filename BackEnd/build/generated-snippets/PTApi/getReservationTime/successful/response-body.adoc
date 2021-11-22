@@ -1,0 +1,15 @@
+[source,options="nowrap"]
+----
+{
+  "statusCode" : 200,
+  "message" : "예약 시간 조회에 성공했습니다.",
+  "data" : [ {
+    "description" : "이두 운동",
+    "nickname" : "김계란",
+    "username" : "김성식",
+    "profileUrl" : "profileURL/profileIMG.jpg",
+    "email" : "eggkim@ssafy.com",
+    "reservationTime" : "2021-07-28T04:00:00"
+  } ]
+}
+----

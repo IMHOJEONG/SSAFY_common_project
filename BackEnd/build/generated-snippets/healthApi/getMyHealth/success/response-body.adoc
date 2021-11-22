@@ -1,0 +1,11 @@
+[source,options="nowrap"]
+----
+{
+  "statusCode" : 200,
+  "message" : "건강정보 조회에 성공했습니다.",
+  "data" : {
+    "heightList" : [ 160, 160, 160, 160, 160, 161 ],
+    "weightList" : [ 44, 43, 46, 42, 43, 40 ]
+  }
+}
+----

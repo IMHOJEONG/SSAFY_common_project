@@ -1,0 +1,11 @@
+[source,http,options="nowrap"]
+----
+PATCH /api/user HTTP/1.1
+Content-Type: application/json;charset=UTF-8
+Content-Length: 33
+Host: i5b305.ssafy.io
+
+{
+  "url" : "fileDIR/fileURL"
+}
+----

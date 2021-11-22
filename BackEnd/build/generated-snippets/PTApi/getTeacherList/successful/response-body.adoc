@@ -1,0 +1,29 @@
+[source,options="nowrap"]
+----
+{
+  "statusCode" : 200,
+  "message" : "PT 선생님 리스트 불러오기에 성공하였습니다.",
+  "data" : {
+    "teacherList" : [ {
+      "username" : "서현진",
+      "gender" : "WOMAN",
+      "age" : 21,
+      "nickname" : "오해영",
+      "tel" : "010-2021-0105",
+      "email" : "eggkim5@ssafy.com",
+      "profilePicture" : null,
+      "starRating" : 4.8,
+      "major" : "특공무술",
+      "price" : 200000,
+      "description" : "좋았어. 거짓은 머리털만큼도 없다! 신뢰와 정직으로 모시겠습니다",
+      "snsList" : [ ],
+      "careers" : [ ],
+      "reservations" : [ ],
+      "certificates" : [ ]
+    } ],
+    "totalPages" : 0,
+    "totalElements" : 0,
+    "numberOfElements" : 0
+  }
+}
+----

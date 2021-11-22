@@ -1,0 +1,5 @@
+[source,bash]
+----
+$ curl 'https://i5b305.ssafy.io/api/pt/teacherlist?page=0&size=10&name=%EC%84%9C%ED%98%84%EC%A7%84&gender=WOMAN&minPrice=100&maxPrice=200000&minAge=1&maxAge=100' -i -X GET \
+    -H 'Authorization: JWT ACCESS TOKEN'
+----

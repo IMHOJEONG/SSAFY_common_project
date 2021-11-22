@@ -1,0 +1,23 @@
+=== Request Fields
+|===
+|필드|타입|필수값|설명|제한
+
+|ptTeacherEmail
+|String
+|true
+|예약할 대상 PT 트레이너의 이메일
+|
+
+|reservationTime
+|String
+|true
+|PT 예약 시간
+|yyyy-MM-dd'T'HH:mm:ss
+
+|description
+|String
+|true
+|예약시간에 진행될 PT 내용에 대한 간략한 설명
+|
+
+|===

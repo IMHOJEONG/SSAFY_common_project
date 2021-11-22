@@ -1,0 +1,119 @@
+=== Request Fields
+|===
+|필드|타입|필수값|설명|제한
+
+|email
+|String
+|true
+|트레이너의 이메일 주소
+|최소 3글자, 최대 50글자 이내로 입력해주세요. @*.com의 양식을 갖추어야 합니다.
+
+|password
+|String
+|true
+|트레이너의 비밀번호
+|최소 3글자, 최대 20글자 이내로 입력해주세요.
+
+|username
+|String
+|true
+|트레이너의 이름
+|최소 2글자, 최대 10글자 이내로 입력해주세요.
+
+|nickname
+|String
+|true
+|트레이너의 별명
+|최소 2글자, 최대 10글자 이내로 입력해주세요.
+
+|age
+|Number
+|true
+|트레이너의 나이
+|150세 이하로 입력해주세요.
+
+|gender
+|Number
+|true
+|트레이너의 성별
+|0 (MAN), 1 (WOMAN) 중 하나로 입력해주세요.
+
+|tel
+|String
+|true
+|트레이너의 전화번호
+|000-000(3글자 혹은 4글자)-000의 형식으로 입력해주세요.
+
+|zipCode
+|String
+|true
+|트레이너의 우편번호
+|5글자로 입력해주세요.
+
+|street
+|String
+|true
+|트레이너의 도로명 주소
+|
+
+|detailedAddress
+|String
+|true
+|트레이너의 상세 주소
+|
+
+|role
+|String
+|true
+|트레이너의 권한
+|
+
+|major
+|String
+|true
+|트레이너의 전공
+|
+
+|certificates
+|Array
+|true
+|트레이너의 자격증 목록
+|
+
+|careers
+|Array
+|true
+|트레이너의 경력 목록
+|
+
+|price
+|Number
+|true
+|트레이너의 가격
+|
+
+|description
+|String
+|true
+|트레이너의 자기 소개
+|
+
+|snsAddrs
+|Array
+|true
+|트레이너의 SNS 주소 목록
+|
+
+|monthlyHeights
+|Null
+|true
+|트레이너의 경우 입력받지 않습니다.
+|
+
+|monthlyWeights
+|Null
+|true
+|트레이너의 경우 입력받지 않습니다.
+|
+
+|===
